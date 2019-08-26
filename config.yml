@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: Beacoworks Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -90,7 +90,7 @@ defaultContentLanguage: en
 # localhost should automatically work.
 #
 # Example: https://status.example.com/
-baseURL: https://cstate.mnts.lt
+baseURL: https://status.beacoworks.tk/
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -105,11 +105,18 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-    - name: API
-      description: The guts of the application.
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
+    - name: Speicher
+      description: Main server on Vultr
+    - name: Glacier
+      description: Main server on QCloud
+    - name: Sanctuary
+      description: Cloud Storage and Chat Server
+    - name: Guacamole
+      description: Guacamole gateway to Beacoworks Servers
+    - name: Chronos
+      description: Chronos Queueing System
+    - name: Scarlet
+      description: Media fetcher for kg.qq.com
 
   # What date format to use?
   #
